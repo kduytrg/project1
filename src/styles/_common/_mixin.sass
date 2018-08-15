@@ -1,0 +1,19 @@
+=home($color: #fff, $height: 369px)
+	background: $color 
+	min-height: $height
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	color: $whites
+	+pad(5rem 0 3rem 0)
+	+media-breakpoint-up(md)
+		+pad(7rem 0 5rem 0)
+=after()
+	+pos(abs,null null -.75rem 50%)
+	display: block
+	height: 3px 
+	width: 60px
+	content: ''
+	background: #000
+	+transform(translateX(-50%))

@@ -4,4 +4,20 @@ html, body
 	font-size: 14px
 	height: 100%
 	width: 100%
-	
+
+.btn-large
+	+pad(1rem 5rem 1.3rem 5rem)
+	+bor-rad(4px)
+	border: 0
+	text-transform: uppercase
+	color: $whites
+	&:hover, 
+	&:active
+		color: $whites
+	&.btn-more
+		background: $warning
+		+box-sha(0 -4px 0px 0px darken($warning, 10%), inset)
+		&:hover, 
+		&:active
+			background: darken($warning, 3%)
+			+box-sha(0 -4px 0px 0px darken($warning, 15%), inset)
